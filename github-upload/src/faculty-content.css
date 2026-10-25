@@ -1,0 +1,719 @@
+/* Verified editorial content, integrated with the existing palette and type system. */
+.source-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  text-underline-offset: 4px;
+  max-width: 100%;
+}
+.source-link:hover {
+  text-decoration: underline;
+  color: var(--ink);
+}
+.source-link-light {
+  color: #b9ccd0;
+}
+.source-link-light:hover {
+  color: var(--paper);
+}
+.about-description > .source-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 14px;
+}
+.faculty-vision {
+  margin: 0 0 24px;
+}
+.faculty-vision h3 {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 550;
+  color: #e0e5d8;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+.faculty-vision p {
+  font-size: 12px;
+  color: #bfced0;
+  margin: 7px 0;
+  line-height: 1.9;
+  max-width: 470px;
+}
+.vision-link {
+  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #d6e0da;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.vision-link .icon {
+  width: 13px;
+  height: 13px;
+}
+.faculty-timeline {
+  grid-column: 1/-1;
+  position: relative;
+  margin-top: 47px;
+  scroll-margin-top: 110px;
+}
+.timeline-kicker {
+  font-family: inherit;
+  font-size: 10px;
+  color: #c2cfc9;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  margin: 0 0 23px;
+  font-weight: 450;
+}
+.timeline-rule {
+  height: 1px;
+  background: #78979777;
+  transform-origin: left center;
+}
+.faculty-timeline ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 0;
+  margin: 0 0 21px;
+}
+.faculty-timeline li > div {
+  position: relative;
+  padding-top: 25px;
+}
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d0b575;
+  box-shadow: 0 0 0 5px var(--blue);
+}
+.faculty-timeline time {
+  font-family: 'Manrope Variable', 'Noto Sans Lao Variable', sans-serif;
+  font-size: 31px;
+  font-weight: 450;
+  letter-spacing: -0.8px;
+  color: #d0b575;
+  line-height: 1.5;
+}
+.faculty-timeline h4 {
+  font:
+    500 15px/1.7 'Manrope Variable',
+    'Noto Sans Lao Variable',
+    sans-serif;
+  margin: 8px 0;
+  color: #f0f2e8;
+  letter-spacing: -0.1px;
+}
+.faculty-timeline p {
+  font-size: 12px;
+  color: #bfced0;
+  line-height: 1.9;
+  max-width: 460px;
+  margin: 0;
+}
+.departments-section > .source-link {
+  margin-top: 28px;
+}
+.department-majors {
+  border-top: 1px solid #cfd7c6;
+  padding-top: 17px;
+  margin-bottom: 19px;
+}
+.department-majors h4 {
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0 0 9px;
+  color: var(--ink);
+}
+.department-majors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.department-majors li {
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.7;
+  padding: 3px 0 3px 14px;
+  position: relative;
+}
+.department-majors li:before {
+  content: '+';
+  font-family: monospace;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  color: var(--gold-ink);
+}
+.department-majors p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #596652;
+  margin: 9px 0 0;
+}
+.department-panel-footnote {
+  line-height: 1.8;
+}
+.department-panel-footnote .source-link {
+  font-size: 9px;
+  color: #596652;
+}
+.learning-section {
+  padding: 85px 0 73px;
+  background: #fff;
+  border-block: 1px solid var(--line);
+}
+.learning-section .section-heading {
+  margin-bottom: 38px;
+}
+.learning-section h2 {
+  font-size: clamp(38px, 3.7vw, 55px);
+}
+.learning-topics {
+  border-top: 1px solid var(--line);
+}
+.learning-topic {
+  display: grid;
+  grid-template-columns: 28px 1fr 245px;
+  gap: 26px;
+  align-items: start;
+  padding: 29px 0;
+  border-bottom: 1px solid var(--line);
+}
+.topic-index {
+  font: 10px/2 monospace;
+  color: var(--gold-ink);
+  padding-top: 3px;
+}
+.learning-topic h3 {
+  font-size: 21px;
+  letter-spacing: -0.6px;
+  line-height: 1.45;
+}
+.learning-topic p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin: 10px 0 0;
+  max-width: 650px;
+}
+.learning-topic-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 4px;
+  gap: 11px;
+}
+.learning-topic-links .text-link {
+  font-size: 11px;
+  gap: 14px;
+  padding-top: 0;
+  max-width: 100%;
+}
+.learning-topic-links .source-link {
+  font-size: 9px;
+}
+.student-resources {
+  margin-top: 45px;
+  padding-top: 29px;
+  border-top: 1px solid #d4dacd;
+}
+.resources-heading {
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 1.8;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  color: var(--ink);
+  margin: 0 0 24px;
+}
+.student-resources > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+}
+.student-resource {
+  min-width: 0;
+}
+.student-resource > a:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  padding: 15px 0 11px;
+  border-top: 1px solid #cbd3c4;
+}
+.student-resource > a:first-child > .icon {
+  width: 17px;
+  height: 17px;
+  margin-top: 6px;
+  transition: transform 0.25s;
+}
+.student-resource > a:first-child:hover > .icon {
+  transform: translate(3px, -3px);
+}
+.student-resource h4 {
+  font-family: 'Manrope Variable', 'Noto Sans Lao Variable', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  line-height: 1.6;
+  margin: 0;
+}
+.student-resource p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #596652;
+  margin: 10px 0 0;
+  max-width: 305px;
+}
+.student-resource .source-link {
+  color: #596652;
+  font-size: 9px;
+}
+.faculty-news {
+  padding-top: 76px;
+  padding-bottom: 79px;
+}
+.news-heading {
+  margin-bottom: 30px;
+}
+.news-heading .eyebrow {
+  margin-bottom: 17px;
+}
+.faculty-news h2 {
+  font-size: 38px;
+}
+.faculty-news-item {
+  display: grid;
+  grid-template-columns: 150px 1fr 112px;
+  gap: 33px;
+  align-items: start;
+  padding-block: 28px;
+  border-block: 1px solid var(--line);
+}
+.news-date {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 5px;
+}
+.news-date > span {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+}
+.news-date time {
+  font-size: 12px;
+  color: var(--gold-ink);
+}
+.news-copy h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+}
+.news-copy h3 > a {
+  display: inline;
+  transition: color 0.2s;
+}
+.news-copy h3 > a:hover {
+  color: var(--gold-ink);
+}
+.news-copy h3 .icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 13px;
+  vertical-align: baseline;
+}
+.news-copy p {
+  max-width: 680px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin: 13px 0 15px;
+}
+.news-read {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  color: var(--muted);
+  font-size: 10px;
+  padding-top: 5px;
+}
+.news-read > .icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.25s;
+}
+.news-read:hover > .icon {
+  transform: translate(3px, -3px);
+}
+.faculty-contact-details {
+  grid-column: 1/-1;
+  border-top: 1px solid #5a7b85;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 25px 65px;
+  padding-top: 29px;
+  margin-top: 0;
+}
+.faculty-contact-details h3 {
+  font-family: inherit;
+  font-size: 9px;
+  line-height: 1.8;
+  font-weight: 450;
+  letter-spacing: 0.1em;
+  color: #bccdcb;
+  margin: 0 0 11px;
+}
+.faculty-contact-details address {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #e1e8e1;
+  max-width: 400px;
+}
+.contact-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  color: #d8e0d4;
+  margin-top: 15px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.contact-map .icon {
+  width: 14px;
+  height: 14px;
+}
+.contact-telephone {
+  font-family: 'Manrope Variable', sans-serif;
+  font-size: 22px;
+  color: #f0f2e8;
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+}
+.faculty-contact-details .contact-email-label {
+  margin-top: 19px;
+  margin-bottom: 7px;
+}
+.contact-email {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.contact-telephone:hover,
+.contact-email:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.faculty-contact-details > .source-link {
+  grid-column: 1/-1;
+}
+html[lang='lo'] .timeline-kicker,
+html[lang='lo'] .resources-heading,
+html[lang='lo'] .faculty-contact-details h3 {
+  letter-spacing: 0;
+}
+html[lang='lo'] .faculty-timeline h4,
+html[lang='lo'] .learning-topic h3,
+html[lang='lo'] .news-copy h3 {
+  line-height: 1.65;
+}
+html[lang='lo'] .learning-topic h3 {
+  font-size: 20px;
+}
+html[lang='lo'] .learning-section h2 {
+  font-size: clamp(36px, 3.7vw, 53px);
+}
+html[lang='lo'] .department-name {
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 1100px) {
+  .main-navigation {
+    gap: 19px;
+    margin-right: 8px;
+  }
+  .main-navigation > a {
+    font-size: 11px;
+  }
+  .header-actions {
+    gap: 16px;
+  }
+  .header-cta {
+    display: none;
+  }
+  .learning-topic {
+    grid-template-columns: 24px 1fr 205px;
+    gap: 20px;
+  }
+  .learning-topic h3 {
+    font-size: 19px;
+  }
+  .learning-topic-links .text-link {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .faculty-news-item {
+    grid-template-columns: 128px 1fr 90px;
+    gap: 26px;
+  }
+  .news-copy h3 {
+    font-size: 22px;
+  }
+  .student-resources > div:last-child {
+    gap: 25px;
+  }
+  .student-resource h4 {
+    font-size: 16px;
+  }
+  html[lang='lo'] .department-name {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-navigation {
+    gap: 15px;
+    margin-right: 0;
+  }
+  .main-navigation > a {
+    font-size: 10px;
+  }
+  .faculty-timeline ol {
+    gap: 40px;
+  }
+  .learning-section {
+    padding-block: 68px;
+  }
+  .learning-topic {
+    grid-template-columns: 22px 1fr 185px;
+    gap: 18px;
+  }
+  .learning-topic-links .text-link {
+    font-size: 9px;
+  }
+  .learning-topic-links .source-link {
+    font-size: 8px;
+  }
+  .student-resource h4 {
+    font-size: 14px;
+  }
+  .student-resource p {
+    font-size: 11px;
+  }
+  .student-resource .source-link {
+    font-size: 8px;
+  }
+  .faculty-contact-details {
+    gap: 25px 40px;
+  }
+}
+@media (max-width: 760px) {
+  .main-navigation {
+    gap: 0;
+  }
+  .main-navigation > a {
+    font-size: 15px;
+  }
+  .faculty-vision p {
+    font-size: 12px;
+  }
+  .faculty-timeline {
+    margin-top: 39px;
+  }
+  .faculty-timeline ol {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-left: 27px;
+    margin-bottom: 22px;
+  }
+  .faculty-timeline li > div {
+    padding-top: 0;
+  }
+  .faculty-timeline time {
+    font-size: 28px;
+  }
+  .faculty-timeline h4 {
+    font-size: 15px;
+  }
+  .faculty-timeline p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .timeline-marker {
+    left: -30px;
+    top: 14px;
+    width: 7px;
+    height: 7px;
+  }
+  .timeline-rule {
+    position: absolute;
+    top: 43px;
+    bottom: 38px;
+    left: 0;
+    height: auto;
+    width: 1px;
+    transform-origin: top center;
+  }
+  .timeline-kicker {
+    font-size: 10px;
+    margin-bottom: 24px;
+  }
+  .faculty-timeline > .source-link {
+    margin-left: 27px;
+  }
+  .department-majors h4 {
+    font-size: 11px;
+  }
+  .department-majors li {
+    font-size: 12px;
+  }
+  .department-majors p {
+    font-size: 10px;
+  }
+  .department-panel-footnote .source-link {
+    font-size: 10px;
+  }
+  .learning-section {
+    padding: 62px 0 47px;
+  }
+  .learning-section h2 {
+    font-size: 42px;
+  }
+  .learning-topic {
+    grid-template-columns: 20px 1fr;
+    gap: 13px 17px;
+    padding-block: 24px;
+  }
+  .learning-topic h3 {
+    font-size: 21px;
+  }
+  .learning-topic p {
+    font-size: 13px;
+    margin-top: 9px;
+  }
+  .learning-topic-links {
+    grid-column: 2;
+    padding-top: 0;
+    gap: 11px;
+  }
+  .learning-topic-links .text-link {
+    font-size: 11px;
+  }
+  .learning-topic-links .source-link {
+    font-size: 10px;
+  }
+  .student-resources {
+    margin-top: 29px;
+    padding-top: 24px;
+  }
+  .resources-heading {
+    font-size: 10px;
+    margin-bottom: 19px;
+  }
+  .student-resources > div:last-child {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .student-resource h4 {
+    font-size: 19px;
+  }
+  .student-resource p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .student-resource .source-link {
+    font-size: 10px;
+  }
+  .student-resource > a:first-child {
+    padding-top: 17px;
+    padding-bottom: 12px;
+  }
+  .faculty-news {
+    padding-block: 57px;
+  }
+  .faculty-news h2 {
+    font-size: 34px;
+  }
+  .faculty-news-item {
+    grid-template-columns: 1fr;
+    gap: 17px;
+    padding-block: 23px;
+  }
+  .news-date {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 13px;
+    padding-top: 0;
+  }
+  .news-date time {
+    font-size: 11px;
+  }
+  .news-copy h3 {
+    font-size: 24px;
+  }
+  .news-copy p {
+    font-size: 13px;
+    margin-top: 13px;
+  }
+  .news-read {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    font-size: 11px;
+  }
+  .news-read > .icon {
+    width: 17px;
+    height: 17px;
+  }
+  .faculty-contact-details {
+    grid-template-columns: 1fr;
+    gap: 27px;
+    padding-top: 26px;
+    margin-top: 7px;
+  }
+  .faculty-contact-details > .source-link {
+    grid-column: auto;
+  }
+  .faculty-contact-details address {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .faculty-contact-details h3 {
+    font-size: 10px;
+  }
+  .contact-telephone {
+    font-size: 25px;
+  }
+  .contact-email {
+    font-size: 13px;
+  }
+  html[lang='lo'] .learning-section h2 {
+    font-size: 38px;
+  }
+  html[lang='lo'] .department-name {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-rule {
+    transform: none !important;
+  }
+}
